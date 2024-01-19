@@ -1,0 +1,47 @@
+  
+   /**global-area-start**/ 
+  
+  .section-heading {
+    &__border {
+        margin-bottom: 25px;
+      .one {
+        width: 47px;
+      }
+      .two {
+        width: 37px;
+      }
+      .three {
+        width: 28px;
+      }
+    }
+    &__shape {
+        display: block;
+        height: 2px;
+        background: $primaryColor;
+        margin: 0px auto 0px;
+        margin-bottom: 1px;
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 1.375;
+        text-transform: capitalize;
+        margin-bottom: 20px;
+        color: $white;
+        
+    }
+    &__description {
+        color: $white;
+        font-size: 16px;
+        font-weight: 400;
+    }
+      
+
+    }
+    .fix {
+        overflow: hidden;
+    }
+         /**global-area-end*/ 
+
+
+  

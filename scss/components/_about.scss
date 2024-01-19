@@ -1,0 +1,134 @@
+.section-title{
+    position: relative;
+    text-align: center;
+    img{
+        position: absolute;
+        top: -25px;
+        left: 93px;
+        z-index: -1;
+    }
+    span{
+        color: #ec6e39;
+        letter-spacing: 1.7px;
+        text-transform: uppercase;
+        font-size: 15px;
+        margin-bottom: 10px;
+        display: block;
+    }
+    h3{
+        font-family: 'Poppins';
+        font-weight: 600;
+        font-size: 40px;
+        padding: 0 33px;
+        margin-bottom: 70px;
+    }
+     @media #{$sm-device} {
+      h3{
+        font-size: 20px;
+      }
+    }
+}
+.slider-content {
+	margin-bottom: 39px;
+    margin-bottom: 39px;
+    border: 2px solid #e5e5e5;
+    padding: 12px 25px;
+    background: white;
+    &::before {
+        content: "";
+        width: 20px;
+        height: 20px;
+        background: black;
+        position: absolute;
+        bottom: 130px;
+        left: 179px;
+        rotate: 46deg;
+        border: 2px solid #e5e5e5;
+        z-index: -1;
+        background: transparent;
+    }
+    .slide-icon{
+        margin-bottom: 17px;
+        i{
+            color: #ffae00;
+        }
+    }
+    p{
+        font-size: 15.7px;
+        color: #686893;
+        padding: 0 24px;
+        margin-left: -23px;
+    }
+
+}
+
+.man {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+    .man .man-img{
+        width: 50%;
+    }
+    .man-li-span{
+        width: 50% ;  
+    }
+    li{
+        list-style: none;
+        font-family: 'Poppins';
+        font-size: 18px;
+        font-weight: 600;
+    }
+    span{
+        font-weight: 700;
+        color: #ec6e39;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        font-size: 14px;
+    }
+}
+
+.faq-content{
+    position: relative;
+    text-align: center;
+    img{
+        position: absolute;
+        top: -35px;
+        left: 23px;
+        z-index: -1;
+    }
+    span{
+        color: #ec6e39;
+        letter-spacing: 1.7px;
+        text-transform: uppercase;
+        font-size: 15px;
+        margin-bottom: 10px;
+        display: block;
+    }
+    h3{
+        font-family: 'Poppins';
+        font-weight: 600;
+        font-size: 40px;
+        padding: 0 33px;
+        margin-bottom: 70px;
+    }
+}
+
+.owl-carousel .owl-item img {
+	display: block;
+	width: 103px;
+	height: 100px;
+	border-radius: 50%;
+	margin-left: 149px;
+}
+
+.accordion .card-header:after {
+    font-family: 'FontAwesome';  
+    content: "\f068";
+    float: right; 
+}
+.accordion .card-header.collapsed:after {
+    /* symbol for "collapsed" panels */
+    content: "\f067"; 
+}
+
+// about area end header

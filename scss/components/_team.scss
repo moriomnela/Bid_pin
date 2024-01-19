@@ -1,0 +1,69 @@
+/**team area start here**/ 
+.team-member {
+    position: relative;
+    padding: 40px 15px 15px 15px;
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 60px;
+    transition: .4s;
+    &:hover {
+        transform: translateY(-6px);
+    }
+   
+    &__img {
+        position: absolute;
+        left: 45px;
+        top: -4px;
+        right: 50px;
+      }
+    
+    
+     &__content {
+        border: 1px solid $border;
+        border-radius: 8px;
+        background: #24242C;
+        
+        .team-title {
+            font-size: 20px;
+            font-weight: 500;
+            color: $white;
+            margin-top: 40px;
+            margin-bottom: 25px;
+        }
+      
+     }
+     &__media {
+        border: 1px dotted $border;
+        margin: 10px 20px;
+        padding: 8px;
+        .up {
+            font-size: 12px;
+            font-weight: 500;
+            color: #B4B6C5; 
+        }
+        .down {
+            font-size: 14px;
+            font-weight: 500;
+            color: $white; 
+        }
+        
+    }
+    &__bottom {
+        .item {
+            display: inline-block;
+            padding: 15px;
+            .price-title {
+                font-size: 12px;
+                font-weight: 500;
+                color: #B4B6C5;
+            }
+            .price {
+                color: $white;
+            }
+        }
+        
+    }
+
+}
+
+/**team area end here**/ 

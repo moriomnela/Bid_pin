@@ -1,0 +1,191 @@
+.event-area{
+    background-color: #f2edff;
+}
+
+.all-section-title{
+    position: relative;
+    text-align: center;
+    img{
+        position: absolute;
+        top: -52px;
+        left: 230px;
+        z-index: 1
+    }
+    span{
+        color: #ec6e39;
+        letter-spacing: 1.7px;
+        text-transform: uppercase;
+        font-size: 15px;
+        margin-bottom: 10px;
+        display: block;
+        z-index: 2;
+        position: relative; 
+        font-weight: 700;
+    }
+    h3{
+        font-family: 'Poppins';
+        font-weight: 600;
+        font-size: 50px;
+        padding: 0 33px;
+        margin-bottom: 70px;
+        z-index: 2;
+        position: relative;
+
+    }
+}
+
+.event-frist-img {
+	position: relative;
+    .btn-duffuled {
+        position: absolute;
+        font-weight: 700;
+        font-size: 15px;
+        color: white;
+        border: 2px solid #e8e8e8;
+        border-radius: 50px;
+        padding: 10px 19px;
+        top: 30px;
+        left: 30px;
+        transition: .3s;
+        text-transform: uppercase;
+        &:hover{
+            background-color: #ec6e39;
+            color: white;
+            border: 2px solid #ec6e39;
+        }
+    }
+}
+
+.event-frist-content {
+    background: #fff;
+    padding: 62px 44px;
+    margin-left: -14px;
+    span {
+        color: #EC6E39;
+        font-size: 14px;
+        font-weight: 800;
+        letter-spacing: 1.3px;
+        text-transform: uppercase;
+        margin-bottom: 13px;
+        display: block;
+    }
+    h3 {
+        font-family: 'Poppins';
+        font-weight: 600;
+        font-size: 32px;
+    }
+    p {
+        font-weight: 400;
+        color: #686893;
+        font-size: 16px;
+        margin-top: 18px;
+    }
+    .all-duffuled-btn {
+        text-transform: uppercase;
+        letter-spacing: 1.4px;
+        font-size: 14px;
+        font-weight: 700;
+        background: #EC6E39;
+        color: #fff;
+        display: table;
+        padding: 14px 27px;
+        border-radius: 50px;
+        transition: 0.3s;
+        border: 2px solid #EC6E39;
+        margin-top: 22px;
+        &:hover{
+            background: transparent;
+            border:2px solid #e8e8e8;
+            color: #EC6E39;
+        }
+    }
+}
+
+.scound-div {
+	margin-top: 7px;
+    .frist-itm {
+        position: relative;
+        margin-top: 45px;
+        ul{
+            position: absolute;
+            background: #ec6e39;
+            width: 65px;
+            height: 65px;
+            right: 30px;
+            top: 30px;
+            border-radius: 50%;
+            li {
+                list-style: none;
+                text-align: center;
+                color: #fff;
+                font-size: 14px;
+                font-weight: 700;
+                position: absolute;
+                transform: translate(-50%, -50%);
+                top: 45%;
+                left: 50%;
+            }
+        }
+    }
+}
+
+.frist-item-content {
+	background: #fff;
+	padding: 25px 29px;
+	text-align: center;
+    h5 {
+        font-size: 20px;
+        font-family: 'Poppins';
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+    p {
+        font-weight: 400;
+        font-size: 15px;
+        color: #686893;
+    }
+}
+
+// accordion
+.accordion-parent {
+	margin-left: 16px;
+    .card{
+        border: none ;
+        .card-header {
+            padding: 17px 36px ;
+            margin-bottom: 0  ;
+            background-color: #fff ;
+            border: 2px solid #e5e5e5;
+            margin-bottom: 18px ;
+            border-radius: 3px ;
+            cursor: pointer;
+        }
+        .card-body {
+            padding: 13px 63px;
+            background: #F2EDFF;
+            text-align: center;
+            margin-top: -18px;
+            transition: .5s;
+        }
+    }
+}
+
+
+.accordion {
+    .card-header{
+        &::after {
+            font-family: 'Font Awesome 5 Free';  
+            content: "\f067";
+            float: right; 
+            color: #ec6e39;
+            font-weight: 900;
+        }
+        &::after {
+            content: "\f068"; 
+            font-weight: 900;
+            color: #ec6e39;
+        }
+    }
+}
+// accordion
+// event area end here

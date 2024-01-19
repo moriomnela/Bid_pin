@@ -1,0 +1,89 @@
+/**product-area start**/ 
+.product {
+    
+    border: 1px solid #363744;
+    padding: 20px;
+    margin-bottom: 30px;
+    transition: .4s;
+    
+    &:hover {
+         transform: translateY(-6px);
+    }
+    &__thumb {
+       margin-bottom: 20px; 
+       
+    }
+    &__top {
+       
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 18px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid #363744;
+      }
+    
+    &__price {
+        background: #414148;
+        color: $primaryColor;
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    &__body {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+
+     .price-item {
+        
+         .price-title {
+             color: $white;
+             font-size: 12px;
+             font-weight: 500;
+             line-height: 20px
+         }    
+        .icon-1 {
+            color: $primaryColor;
+            font-size: 10px; 
+        }
+        .icon {
+            color: $white;
+            font-size: 10px; 
+        }
+        .price {
+            display: flex;
+            align-items: center;
+        }
+        .price p {
+            color: $white;
+            font-size: 14px;
+            margin-left: 7px;
+           
+        }
+     }
+    
+    }
+    &__button {
+        display: flex;
+        justify-content: space-between;
+        .btn {
+            background: $primaryColor;
+            padding: 6px 10px;
+            border-radius: 8px;
+            color: $white;
+            font-size: 18px;
+            text-transform: capitalize;
+            border: 1px solid $primaryColor;
+        }
+       .love-icon {
+        padding: 10px 12px;
+        color: #D7443E;
+        background-color: #292931;
+       } 
+    }
+}
+
+ /**product-area end**/ 
+ 

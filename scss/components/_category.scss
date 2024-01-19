@@ -1,0 +1,21 @@
+ 
+/**category-area-start**/ 
+.single-category {
+    padding: 45px 10px;
+    position: relative;
+    text-align: center;
+    border: 1px solid #363744;
+    &__icon {
+       color: $primaryColor;
+       font-size: 23px;
+       position: relative;
+       margin-bottom: 25px;
+     
+    }
+    &__text .title {
+        font-size: 20px;
+        width: 500;
+        color: $white;
+    }
+}
+/**category-area-end**/ 

@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap');
+
+// BACKGROUND COLOR AND COLOR INFO
+
+$primaryColor: #07DC84;
+$border: #363744;
+$secondaryColor: #030734;
+$headingColor: #2a3f65;
+$bodyBgColor: #202028;
+$white: #fff;
+$black: #000;
+$deepBlack : #040021;
+$lightWhite: #858585;
+
+
+// FONT FAMILY
+
+$headingFont: 'Poppins', sans-serif;
+$bodyFont: 'Poppins', sans-serif;
+
+// color variable for Bootstrap
+$primary: #07DC84;
+$secondary: #868e96;
+$success: #28c76f;
+$danger: #ea5455;
+$warning: #ff9f43;
+$info: #1e9ff2;
+$dark: #082032;
+$light: #bcc7da;
+$muted: #a0a0a0;
+
+/* Responsive Variables */
+
+$extra-big-device: '(min-width: 1450px) ';
+
+$xl-device: 'only screen and (min-width: 1200px) and (max-width: 1450px)';
+$lg-device: 'only screen and (min-width: 992px) and (max-width: 1200px)';
+$md-device:'only screen and (min-width: 768px) and (max-width: 991px)';
+$xsm-device:'(max-width: 767px)';
+$sm-device: 'only screen and (min-width: 576px) and (max-width: 767px)';
+
+// Use sample 
+// @media #{$md-device} {
+//     padding: 40px 0 40px;
+//   }

@@ -1,0 +1,34 @@
+    /**work-area-start**/    
+.work-content {
+    margin-bottom: 120px;
+    &__top {
+        height: 80px;
+        width: 80px;
+        line-height: 80px;
+        font-size: 32px;
+        margin: 0 auto 0; 
+        font-weight: 700;
+        color: #07DC84;
+        border: 1px solid #363744;
+        border-radius: 100%;
+        margin-bottom: 30px;
+       
+        
+}
+   &__text {
+       .title {
+        font-size: 20px;
+        font-weight: 700;
+        color: $white;
+       } 
+       .dis {
+        font-size: 16px;
+        font-weight: 400;
+        color: $white;
+       }
+
+
+   }
+
+}
+             /**work-area-end **/   

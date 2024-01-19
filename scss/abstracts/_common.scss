@@ -1,0 +1,560 @@
+@import './variables';
+// @import './mixins';
+// --------------- COMMON CSS ---------------
+
+body {
+    font-family: $bodyFont;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 16px;
+    color: #FFFFFF;
+    background-color:$bodyBgColor;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1170px;
+  }
+}
+
+  .default-btn {
+    background: $primaryColor;
+    padding: 11px 16px;
+    border-radius: 8px;
+    color: $white;
+    font-size: 18px;
+    text-transform: capitalize;
+    border: 1px solid $primaryColor;
+    transition: .3s all;
+    &:hover {
+      background-color: transparent;
+    }
+  }
+    
+.default-btn-2 {
+  background: #414148;
+  padding: 11px 16px;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 18px;
+  text-transform: capitalize;
+  border: 1px solid #414148;
+  transition: .3s all;
+  &:hover {
+    background-color: transparent;
+  }
+}
+  
+
+  :root {
+    --animate-delay: 0.5s;
+  }
+  
+  .my-element {
+    --animate-duration: 0.5s;
+  }
+  
+  /* width */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    height: 10px;
+
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: $primaryColor;
+    -webkit-transition: all 0.5s ease-out 0s;
+    -moz-transition: all 0.5s ease-out 0s;
+    -ms-transition: all 0.5s ease-out 0s;
+    -o-transition: all 0.5s ease-out 0s;
+    transition: all 0.5s ease-out 0s;
+    height: 100px;
+  }
+  
+  .img, img {
+    max-width: 100%;
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+  }  
+  a {
+    text-decoration: none;
+  }
+  
+  a{
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+  }
+  
+  a:focus,
+  .button:focus {
+    text-decoration: none;
+    outline: none;
+  }
+  
+  a:focus,
+  a:hover {
+    color: #07DC84;
+    text-decoration: none;
+  }
+  
+  a,
+  button {
+    color: inherit;
+    outline: medium none;
+  }
+  
+  button:focus, input:focus, input:focus, textarea, textarea:focus {
+    outline: 0;
+  }
+  
+  .uppercase {
+    text-transform: uppercase;
+  }
+  
+  .capitalize {
+    text-transform: capitalize;
+  }
+  
+  h1,h2,h3, h4,h5,h6 {
+    font-family: $headingFont;
+    font-weight: normal;
+    margin-top: 0px;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: normal;
+    color: #000;
+  }
+  
+  h1 a,h2 a,h3 a,h4 a,h5 a,h6 a {
+    color: inherit;
+  }
+  
+  ul {
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  p {
+    font-family: $bodyFont;
+    font-size: 17px;
+    font-weight: normal;
+    line-height: 1.75rem;
+    color: #454545;
+    margin-bottom: 0;
+    text-transform: capitalize;
+  }
+  
+  hr {
+    border-top: 0 none;
+    margin: 30px 0;
+    padding: 0;
+  }
+  
+  label {
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  
+  span {
+    color: #707070;
+  }
+  
+  *::-moz-selection {
+    text-shadow: none;
+  }
+  
+  ::-moz-selection {
+    text-shadow: none;
+  }
+  
+  ::selection {
+    text-shadow: none;
+    color: #ffff;
+    background: #1D1D1D;
+  }
+   /*--
+      - Site Button
+  -----------------------------------------*/
+  .btn.style1 {
+    background: #fff;
+    color: #030734;
+  }
+  .btn.style1:hover {
+    background: #fff;
+    color: #fff;
+  }
+  .btn {
+    display: inline-block;
+    line-height: 35px;
+    font-weight: 500;
+    border-radius: 5px;
+    text-align: center;
+    transition: all 0.7s ease-in-out;
+    position: relative;
+    z-index: 1;
+    border: none;
+    padding: 14px 50px 15px;
+    border-radius: 6px;
+    color: #fff;
+    overflow: hidden;
+    white-space: nowrap;
+    background-color: #1f71d4;
+    font-size: 20px;
+    text-transform: capitalize;
+  }
+.btn:hover {
+  color: #fff;
+}
+.btn:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 50%;
+  height: 0;
+  visibility: hidden;
+  opacity: 0;
+  z-index: -1;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+.btn:after {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  content: "";
+  width: 50%;
+  height: 0;
+  visibility: hidden;
+  opacity: 0;
+  z-index: -1;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+.btn:after, .btn:before {
+  background: $secondaryColor;
+}
+.btn:hover:after, .btn:hover:before {
+  width: 100%;
+  height: 100%;
+  visibility: visible;
+  opacity: 1;
+  color: #fff;
+}
+
+  /*--
+      - Section Title
+  -----------------------------------------*/
+
+.section-title {
+  span  {
+      display: inline-block;
+      color: #1f71d4;
+      font-size: 18px;
+      font-weight: 500;
+      margin-bottom: 10px;
+      position: relative;
+      &::after {
+        content: '';
+        position: absolute;
+        height: 2px;
+        background: #1f71d4;
+        width: 30px;
+        bottom: 7px;
+        right: auto;
+        left: 110%;
+      }
+    }
+    h2 {
+      font-size: 43px;
+      line-height: 1;
+      margin-bottom: 20px;
+    }
+    .max-wid {
+      width: 62%;
+      margin: auto;
+    }
+
+}
+  /*--
+      - Input Placeholder
+  -----------------------------------------*/
+  /*--
+      - Common Classes
+  -----------------------------------------*/
+  .fix {
+    overflow: hidden;
+  }
+  
+  .clear {
+    clear: both;
+  }
+  .white-c {
+    color: #fff;
+  }
+  
+  .main_menu nav > ul > li.menu-item-has-children > a::after {
+    content: "\f078";
+    font-family: "Font Awesome 5 Free";
+    font-size: 13px;
+    margin-left: 4px;
+    font-weight: 600;
+  }
+  
+  .mb-xl {
+    margin-bottom: 119px !important;
+  }
+  
+  input[type=radio]:after {
+    width: 20px;
+    height: 20px;
+    border-radius: 15px;
+    top: 0px;
+    left: 0px;
+    position: relative;
+    background-color: #FFFFFF;
+    content: "";
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid #7B26BE;
+  }
+  
+  input[type=radio]:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: 2px;
+    position: relative;
+    background-color: #7B26BE;
+    content: "";
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid #fff;
+}
+
+ /*============** Sticky Header **============*/
+.sticky {
+	position: fixed !important;
+	left: 0;
+	top: -0;
+	margin: auto;
+	width: 100%;
+	animation: smooth_sticky 1.3s;
+	z-index: 11;
+	background: #fff;
+	box-shadow: 0px 0px 10px 0px rgba(11, 0, 59, 0.15);
+}
+ /*==== Animation Sticky ==== */
+
+ @-webkit-keyframes smooth_sticky {
+	0% {
+			top: -280px;
+	}
+	100% {
+			top: 0px;
+	}
+}
+@keyframes smooth_sticky {
+	0% {
+			top: -280px;
+	}
+	100% {
+			top: 0px;
+	}
+}
+
+
+
+
+ /*============** Custom Cursor **============*/
+ .custom__cursor-one {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    border: 2px solid #1f71d4;
+    transition: all 200ms ease-out;
+    position: fixed;
+    pointer-events: none;
+    left: 0;
+    top: 0;
+    transform: translate(calc(-50% + 5px), -50%);
+    z-index: 999999;
+	&.main {
+		border-color: red-1;
+	}
+}
+.custom__cursor__hover {
+    background: #1f71d463;
+    opacity: 0.2;
+    width: 50px;
+    height: 50px;
+	&.main {
+		background: red-1;
+		opacity: 0.4;
+	}
+}
+
+ /*============** Scroll Top CSS **============*/
+ .scroll-up {
+	i {
+		position: absolute;
+		left: 0;
+		right: 0;
+		text-align: center;
+		line-height: 48px;
+		color: #1f71d4;
+		font-size: 20px;
+	}
+	cursor: pointer;
+	display: block;
+	border-radius: 50px;
+	box-shadow: inset  0 0 0 2px #1f71d463;
+	z-index: 10000;
+	opacity: 0;
+	visibility: hidden;
+	transform: translateY(15px);
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+	height: 50px;
+	width: 50px;
+    transition: all 200ms linear;
+ 
+	&.active-scroll {
+		opacity: 1;
+		visibility: visible;
+		transform: translateY(0);
+	}
+	svg path { 
+		fill: none; 
+	}
+	svg.scroll-circle path {
+		stroke: #1f71d4;
+		stroke-width: 4;
+		box-sizing:border-box;
+		transition: all 200ms linear;
+	}
+
+.scroll-one {
+	box-shadow: inset  0 0 0 2px #1f71d463;
+	&::after {
+		color: royalblue-1;
+	}
+	svg.scroll-circle path {
+		stroke: royalblue-1;
+	}
+
+}
+
+/*==== Preloding ====*/
+#loading{
+	background-color: #051235;
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	z-index: 99999;
+	margin-top: 0px;
+	top: 0px;
+}
+#loading-center{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+#loading-center-absolute {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	height: 50px;
+	width: 50px;
+	margin-top: -25px;
+	margin-left: -25px;
+   -ms-transform: rotate(45deg); 
+   	-webkit-transform: rotate(45deg);
+    transform: rotate(45deg); 
+	-webkit-animation: loading-center-absolute 1.5s infinite;
+	animation: loading-center-absolute 1.5s infinite;
+
+}
+.object{
+	width: 25px;
+	height: 25px;
+	background-color: #fff;
+	float: left;
+	
+}
+#object_one {
+	-webkit-animation: object_one 1.5s infinite;
+	animation: object_one 1.5s infinite;
+	}
+#object_two {
+	-webkit-animation: object_two 1.5s infinite;
+	animation: object_two 1.5s infinite;
+	}
+#object_three {
+	-webkit-animation: object_three 1.5s infinite;
+	animation: object_three 1.5s infinite;
+	}
+#object_four {
+	-webkit-animation: object_four 1.5s infinite;
+	animation: object_four 1.5s infinite;
+	}
+	
+
+@-webkit-keyframes loading-center-absolute {
+  100% { -webkit-transform: rotate(-45deg); }
+
+}
+
+@keyframes loading-center-absolute {
+  100% { 
+    transform:  rotate(-45deg);
+    -webkit-transform:  rotate(-45deg);
+  }
+}
+
+
+@-webkit-keyframes object_one {
+  25% { -webkit-transform: translate(0,-50px) rotate(-180deg); }
+  100% { -webkit-transform: translate(0,0) rotate(-180deg); }
+
+}
+
+@keyframes object_one {
+  25% { 
+    transform: translate(0,-50px) rotate(-180deg);
+    -webkit-transform: translate(0,-50px) rotate(-180deg);
+  } 
+  100% { 
+    transform: translate(0,0) rotate(-180deg);
+    -webkit-transform: translate(0,0) rotate(-180deg);
+  }
+}
+
+
+// @-webkit-keyframes object_two {
+//   25% { -webkit-transform: translate(50px,0) rotate(-180deg); }
+//   100% { -webkit-transform: translate(0,0) rotate(-180deg); }
+// }
+
+ }
+               
+    //  all section-heading 
